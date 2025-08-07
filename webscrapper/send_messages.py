@@ -5,6 +5,8 @@ from twilio.rest import Client
 import os
 import sys
 import django
+from dotenv import load_dotenv
+import os
 
 # Set up Django environment
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -15,8 +17,8 @@ django.setup()
 from webscrapper.db_hits import get_data
 
 # Twilio credentials
-account_sid = 'AC026290cdfdde8e722373d00706b0e15e'
-auth_token = 'bb5c3edabaa2ccd83842975a644c289b'
+account_sid = os.getenv("account_id")
+auth_token =  os.getenv("auth_to")
 client = Client(account_sid, auth_token)
 
 def send_message():
