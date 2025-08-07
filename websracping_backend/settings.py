@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9e=s6(7n-xs32r^^g#0m%rcl31-7=gcus4sk8$xnyxaqek!2r*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,8 +37,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'webscrapper'
+    'webscrapper',
+    # 'django_cron',
 ]
+
+
+# CRON_CLASSES = [
+#     "webscrapper.scripts.send_messages.SendWhatsAppMessageJob",
+# ]
+
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

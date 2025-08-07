@@ -12,3 +12,10 @@ class Companydetails(models.Model):
 
     def __str__(self):
         return f"{self.company_name} based on {self.location} {self.company_type} {self.directory}"
+
+
+class RecentCount(models.Model):
+    recent_company_id = models.ForeignKey(Companydetails, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"this company {self.recent_company_id} is seen"
