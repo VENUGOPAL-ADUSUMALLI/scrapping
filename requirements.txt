@@ -1,3 +1,4 @@
+openai
 apscheduler
 asgiref==3.9.1
 attrs==25.3.0

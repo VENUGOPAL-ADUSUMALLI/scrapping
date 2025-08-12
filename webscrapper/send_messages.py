@@ -17,8 +17,8 @@ django.setup()
 from webscrapper.db_hits import get_data
 
 # Twilio credentials
-account_sid = os.getenv("account_id")
-auth_token =  os.getenv("auth_to")
+account_sid="your twillo account id"
+auth_token = "your auth token"
 client = Client(account_sid, auth_token)
 
 def send_message():
