@@ -6,8 +6,8 @@ from webscrapper.models import RecentCount
 from webscrapper.ai_scrapping_details import *
 
 # Twilio Credentials
-account_sid="AC026290cdfdde8e722373d00706b0e15e"
-auth_token = "bb5c3edabaa2ccd83842975a644c289b"
+account_sid="Your twilio ssid"
+auth_token = "your twilio acoount id"
 twilio_number = "whatsapp:+14155238886"
 client = Client(account_sid, auth_token)
 
