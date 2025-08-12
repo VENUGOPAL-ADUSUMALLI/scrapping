@@ -1,7 +1,7 @@
 import requests
 from openai import OpenAI
 
-TAVILY_API_KEY ="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"
+TAVILY_API_KEY ="tavily api key"
 OPENAI_API_KEY="Your APi KEY"
 
 client = OpenAI(api_key=OPENAI_API_KEY)
